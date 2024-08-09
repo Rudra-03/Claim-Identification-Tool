@@ -42,28 +42,25 @@ The Claim Span Identification Tool is a state-of-the-art natural language proces
 ## Installation
 
 1. Clone the repository:
-   \`\`\`bash
+   ```
    git clone https://github.com/[username]/claim-span-identification.git
    cd claim-span-identification
-   \`\`\`
+
 
 2. Create and activate a virtual environment (optional but recommended):
-   \`\`\`bash
+   ```
    python -m venv venv
    source venv/bin/activate  # On Windows, use \`venv\Scripts\activate\`
-   \`\`\`
 
 3. Install the required dependencies:
-   \`\`\`bash
+   ```
    pip install -r requirements.txt
-   \`\`\`
 
 ## Usage
 
 1. Launch the Streamlit application:
-   \`\`\`bash
+   ```
    streamlit run app.py
-   \`\`\`
 
 2. Load the App: Open the app in your browser at the provided URL after running the above command.
 
@@ -102,7 +99,7 @@ Our tool incorporates the following state-of-the-art transformer models:
 - **Framework**: PyTorch
 - **Tokenization & Modeling**: Hugging Face Transformers
 - **Web Interface**: Streamlit
-- **Caching**: Streamlit's \`@st.cache_resource\` for optimized model loading
+- **Caching**: Streamlit's `@st.cache_resource` for optimized model loading
 - **Post-processing**: Custom algorithms for refining model predictions
 
 
@@ -124,7 +121,7 @@ I welcome contributions to enhance the functionality and performance of this too
 
 ## Contact
 
-[Rudra Roy] - [royrudra164@gmail.com](mailto:royrudra164@gmail.com)
+Rudra Roy - [royrudra164@gmail.com](mailto:royrudra164@gmail.com)
 
 <!-- Project Link: [https://github.com/[username]/claim-span-identification](https://github.com/[username]/claim-span-identification) -->
 
