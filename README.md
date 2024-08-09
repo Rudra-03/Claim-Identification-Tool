@@ -42,18 +42,18 @@ The Claim Span Identification Tool is a state-of-the-art natural language proces
 ## Installation
 
 1. Clone the repository:
-   ```
-   git clone https://github.com/[username]/claim-span-identification.git
+   ```python
+   git clone https://github.com/Rudra-03/Claim-Identification-Tool.git
    cd claim-span-identification
 
 
 2. Create and activate a virtual environment (optional but recommended):
-   ```
+   ```python
    python -m venv venv
-   source venv/bin/activate  # On Windows, use \`venv\Scripts\activate\`
+   source venv/bin/activate    # On Windows, use `venv\Scripts\activate`
 
 3. Install the required dependencies:
-   ```
+   ```python
    pip install -r requirements.txt
 
 ## Usage
@@ -108,9 +108,9 @@ Our tool incorporates the following state-of-the-art transformer models:
 I welcome contributions to enhance the functionality and performance of this tool. Please follow these steps:
 
 1. Fork the repository
-2. Create your feature branch (\`git checkout -b feature/AmazingFeature\`)
-3. Commit your changes (\`git commit -m 'Add some AmazingFeature'\`)
-4. Push to the branch (\`git push origin feature/AmazingFeature\`)
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
 ## Acknowledgements
