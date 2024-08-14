@@ -59,7 +59,7 @@ The Claim Span Identification Tool is a state-of-the-art natural language proces
 ## Usage
 
 1. Launch the Streamlit application:
-   ```
+   ```python
    streamlit run app.py
 
 2. Load the App: Open the app in your browser at the provided URL after running the above command.
