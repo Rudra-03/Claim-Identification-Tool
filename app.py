@@ -1,12 +1,18 @@
 import os
 import torch
 from dotenv import load_dotenv
-import streamlit as st
 from huggingface_hub import login
 from transformers.models.auto.tokenization_auto import AutoTokenizer
 from transformers.models.auto.modeling_auto import AutoModelForTokenClassification
 
+load_dotenv()
+huggingface_token = os.getenv("HUGGINGFACE_API_TOKEN")
+if huggingface_token:
+    login(huggingface_token)
+else:
+    print("HUGGINGFACE_API_TOKEN not found in environment variables")
 
+import streamlit as st
 @st.cache_resource
 # def load_model():
 #     # model_path = "binary_model_xml-r_complete_dataset"
@@ -113,11 +119,8 @@ def highlight_claims(tokens, predictions):
     return " ".join(highlighted_text)
 
 
-load_dotenv()
-
 
 def main():
-    login(os.getenv("HUGGINGFACE_API_TOKEN"))
     st.title("Claim Span Identification Tool")
 
     model_name = ["XML-ROBERTa", "M-Bert", "Muril", "Indic-Bert"]
